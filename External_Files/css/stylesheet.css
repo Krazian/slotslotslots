@@ -80,6 +80,10 @@ h1{
   margin: 0 auto;
 }
 
+.results p{
+  font-size: 20px;
+}
+
 .showwords{
   font-family: 'Open Sans', sans-serif !important;
   background-color: transparent !important;
@@ -97,7 +101,7 @@ h1{
   height: 80px;
   margin-top: -10px;
   border: transparent;
-  margin: 0px 0px 0px 10px;
+  margin: 0px 0px 10px 10px;
 }
 
 #copywords:disabled{
@@ -145,6 +149,10 @@ h1{
     padding: 5px 0px;
   }
 
+  .results p{
+    font-size: 17px;
+  }
+
   #copywords{
     margin:15px 0;
   }
@@ -164,10 +172,14 @@ h1{
     padding: 5px 0px;
   }
   
+  .results p{
+    font-size: 14px;
+  }
+
   .showwords{
     font-size: 20px !important;
   }
-  
+
   #copywords{
     margin:15px 0;
   }
