@@ -99,6 +99,7 @@ h1{
   color: white !important;
   font-size: 30px !important;
   padding: 17px 10px !important;
+  width:100%;
 }
 
 #copywords{
@@ -109,7 +110,8 @@ h1{
   height: 80px;
   margin-top: -10px;
   border: transparent;
-  margin: 0px 0px 10px 5vw;
+  margin: 0px 0px 10px 0px;
+  width:100%;
 }
 
 #copywords:disabled{
@@ -141,6 +143,10 @@ h1{
   .slot div{
     padding: 5px 0px;
   }
+
+  .showwords{
+    margin-bottom:15px;
+  }
 }
 
 @media only screen and (min-width: 489px) and (max-width: 767px){
@@ -155,6 +161,10 @@ h1{
 
   .slot div{
     padding: 5px 0px;
+  }
+
+  .showwords{
+    margin-bottom:15px;
   }
 
   .results p{
@@ -186,11 +196,9 @@ h1{
 
   .showwords{
     font-size: 20px !important;
-    width:100%;
   }
 
   #copywords{
     margin:15px 0;
-    width:100%;
   }
 }
