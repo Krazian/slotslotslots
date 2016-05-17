@@ -3,40 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Event Name Generator</title>
-	<link rel="stylesheet" href="External_Files/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="External_Files/bootstrap/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" href="External_Files/bootstrap-3.3.6-dist/css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Monoton|Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="External_Files/css/jquery-slotmachine.min.css">
 	<link rel="stylesheet" href="External_Files/css/stylesheet.css">
 	<script type="text/javascript" src="External_Files/scripts/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="External_Files/scripts/clipboard.min.js"></script>
-	<script type="text/javascript" src="External_Files/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="External_Files/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="External_Files/scripts/jquery-slotmachine.min.js"></script>
 	<script type="text/javascript" src="External_Files/scripts/custom-scripts.js"></script>
 	</head>
 	<body>
-		<div class="row-fluid">
-			<h1 class="span12">EVENT NAME GENERATOR</h1>
-		</div>
-		<div class="row-fluid">
-			<div class="span12">
-				<div class="banner">Generate a name for your next corporate event or party! It’s as easy as pushing a button!</div>
+		<div class="container-fluid">
+			<div class="row">
+				<h1 class="col-lg-12">EVENT NAME GENERATOR</h1>
 			</div>
-		</div>
-		<div class="row-fluid container">
-			<div class="span12 slotmachine">
-				<div class="row-fluid">
-					<div class="span4 slot" id="machine1"></div>
-					<div class="span2 slot" id="machine2"></div>
-					<div class="span5 slot" id="machine3"></div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="banner">Generate a name for your next corporate event or party! It’s as easy as pushing a button!</div>
 				</div>
 			</div>
-		</div>
-		<button id="randomizeButton">DO IT!</button>
-		<div class="results">
-			<p>Yay! Your next Event has been named!</p>
-			<input class="showwords" type="text" prop="disabled">
-			<button id="copywords" data-clipboard-target=".showwords">Copy</button>
+			<div class="row house">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 slot" id="machine1"></div>
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 slot" id="machine2"></div>
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 slot" id="machine3"></div>
+					</div>
+				</div>
+			</div>
+			<button id="randomizeButton">DO IT!</button>
+			<div class="results">
+				<p>Yay! Your next Event has been named!</p>
+				<input class="showwords" type="text" prop="disabled">
+				<button id="copywords" data-clipboard-target=".showwords">Copy</button>
+			</div>
 		</div>
 	</body>
 </html>

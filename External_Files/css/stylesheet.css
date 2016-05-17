@@ -19,9 +19,9 @@ h1{
   display: inline-block;
 }
 
-.container{
+.house{
   background-color: #84ABDB;
-  padding:20px 0px;
+  padding:20px 20px;
   width:82%;
   margin:0 auto;
   margin-top: 40px;
@@ -31,15 +31,8 @@ h1{
   background: linear-gradient(to bottom, #2B5F81 0%, #ffffff 50%, #2B5F81 100%);
 }
 
-.slotmachine{
-  width:100%;
-  margin-left: 3vw !important;
-}
-
 .slot{
 	height:200px;
-  margin-left: 6px;
-  margin-right:6px;
   font-size:55px;
   font-family: 'Open Sans', sans-serif;
 	display:inline-block; 
@@ -55,6 +48,10 @@ h1{
   padding: 32px 0px;
   line-height: 115px;
   text-align: center;
+}
+
+#machine1, #machine2, #machine3{
+  padding: 0px 0px !important;
 }
 
 #randomizeButton{
@@ -115,7 +112,7 @@ h1{
   content: '';
   position: absolute;
   padding-left: 10px;
-  margin-top: -18px;
+  margin-top: -7px;
   border-top: 28px solid white;
   border-bottom: 28px solid white;
   border-right: 25px solid transparent;
@@ -130,5 +127,25 @@ h1{
 @media only screen and (min-width: 768px) and (max-width: 999px){
   .slot{
     font-size: 35px
+  }
+}
+
+@media only screen and (min-width: 489px) and (max-width: 767px){
+  .house{
+    width:100%;
+  }
+
+  .slot{
+    font-size: 28px
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .house{
+    width:100%;
+  }
+
+  .slot{
+    font-size: 20px
   }
 }
