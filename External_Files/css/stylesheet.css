@@ -186,9 +186,11 @@ h1{
 
   .showwords{
     font-size: 20px !important;
+    width:100%;
   }
 
   #copywords{
     margin:15px 0;
+    width:100%;
   }
 }
