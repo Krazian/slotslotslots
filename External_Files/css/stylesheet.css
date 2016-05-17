@@ -1,7 +1,7 @@
 body{
   background: url("../images/10371-NMFVDM.png");
-  background-size: cover;
-  background-position: 0px -300px;
+  background-size: 100% 200%;
+  background-position: 0px -270px;
   text-align: center;
 }
 
@@ -57,8 +57,8 @@ h1{
 #randomizeButton{
   font-size: 30px;
   font-family: 'Monoton', cursive;
-  height:100px;
-  width: 200px;
+  height:70px;
+  width: 140px;
   margin:0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -109,7 +109,7 @@ h1{
   height: 80px;
   margin-top: -10px;
   border: transparent;
-  margin: 0px 0px 10px 6vw;
+  margin: 0px 0px 10px 5vw;
 }
 
 #copywords:disabled{
@@ -126,13 +126,13 @@ h1{
   border-right: 37px solid transparent;*/
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px){
+@media only screen and (min-width: 1000px) and (max-width: 1200px){
   .slot{
     font-size: 40px
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 999px){
+@media only screen and (min-width: 768px) and (max-width: 999px){
   .slot{
     font-size: 35px;
     height:137px;
@@ -143,7 +143,7 @@ h1{
   }
 }
 
-@media screen and (min-width: 489px) and (max-width: 767px){
+@media only screen and (min-width: 489px) and (max-width: 767px){
   .house{
     width:100%;
   }
@@ -166,7 +166,7 @@ h1{
   }
 }
 
-@media screen and (max-width: 480px){
+@media only screen and (max-width: 480px){
   .house{
     width:100%;
   }
