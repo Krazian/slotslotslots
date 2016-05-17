@@ -24,7 +24,7 @@ h1{
   padding:20px 20px;
   width:82%;
   margin:0 auto;
-  margin-top: 40px;
+  margin-top: 25px;
   background: -webkit-linear-gradient(top, #2B5F81 0%, #ffffff 50%, #2B5F81 100%);
   background: -o-linear-gradient(top, #2B5F81 0%, #ffffff 50%, #2B5F81 100%);
   background: -moz-linear-gradient(top, #2B5F81 0%, #ffffff 50%, #2B5F81 100%);
@@ -101,7 +101,7 @@ h1{
   height: 80px;
   margin-top: -10px;
   border: transparent;
-  margin: 0px 0px 10px 10px;
+  margin: 0px 0px 10px 6vw;
 }
 
 #copywords:disabled{
@@ -110,7 +110,7 @@ h1{
 
 #copywords:after{
 /*  content: '';
-  position: absolute;
+  position: relative;
   margin-left: 32px;
   margin-top: -19px;
   border-top: 40px solid white;
