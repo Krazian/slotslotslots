@@ -39,6 +39,7 @@ $(document).ready(function(){
 
 	//Start shuffling/spinning on click
 	$("#randomizeButton").click(function(){
+		$(this).css("animation-name","na");
 		machine1.shuffle();
 		machine2.shuffle();
 		machine3.shuffle();
@@ -52,13 +53,13 @@ $(document).ready(function(){
 		$(".showwords").val("");
 		//Function for setRandomize that selects appropriate word
 		var acceptableWords = function(array){
-			return array[Math.floor(Math.random() * array.length)]
+			return array[Math.floor(Math.random() * array.length)];
 		};
 
 		//Stops first wheel and will determine the value of second will if applicable
 		setTimeout(
 			function(){
-				machine1.stop()
+				machine1.stop();
 				switch (machine1.active){
 					//If 1st word is: Be, Encourage, Discover, Create
 					case 0:
@@ -113,9 +114,8 @@ $(document).ready(function(){
 		},1000);
 
 		setTimeout(function(){
-			machine2.stop()
+			machine2.stop();
 			switch (machine1.active+""+machine2.active){
-
 				//Be + [Space]
 				case "03":
 					machine3.setRandomize(acceptableWords([0,2,3,4,6,9,15]));
@@ -194,7 +194,8 @@ $(document).ready(function(){
       	$(".showwords").val(one+" "+three);
     	} else {
     		$(".showwords").val(one+" "+two+" "+three);
-    	}
+    	};
+    	$("#randomizeButton").css("animation-name","blink");
 		},3900);
 	});
 })
