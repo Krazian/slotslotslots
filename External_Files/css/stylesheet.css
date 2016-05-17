@@ -163,4 +163,8 @@ h1{
   .slot div{
     padding: 5px 0px;
   }
+
+  #copywords{
+    margin:15px 0;
+  }
 }
