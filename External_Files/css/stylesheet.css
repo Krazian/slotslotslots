@@ -163,7 +163,11 @@ h1{
   .slot div{
     padding: 5px 0px;
   }
-
+  
+  .showwords{
+    font-size: 20px !important;
+  }
+  
   #copywords{
     margin:15px 0;
   }
