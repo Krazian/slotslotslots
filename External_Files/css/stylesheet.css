@@ -5,11 +5,17 @@ body{
   text-align: center;
 }
 
+@font-face {
+  font-family: "Phosphate Inline";
+  src: url("../fonts/Phosphateinline.ttf") format("truetype");
+}
+
 h1{
-   font-family: 'Monoton', cursive;
+   font-family: 'Phosphate Inline', sans-serif;
    color: white;
-   font-size:40px;
+   font-size:60px;
    font-weight: lighter;
+   margin-bottom:-10px;
 }
 
 .banner{
