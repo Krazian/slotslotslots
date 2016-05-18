@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 	//Start shuffling/spinning on click
 	$("#randomizeButton").click(function(){
-		$("#twitter-script").remove()
+		$(".twitter-share-button").remove();
 		$(this).css("animation-name","na");
 		machine1.shuffle();
 		machine2.shuffle();
@@ -202,9 +202,9 @@ $(document).ready(function(){
     	};
     	$(".showwords").val(eventName);
     	$("#randomizeButton").css("animation-name","blink");
-    	$(".twitter-share-button").attr("data-text","I used Gramercy Tech's Event Name Generator and got '"+eventName+"'!")
-    	$(".twitter-share-button").attr("data-hashtags",eventHashtag)
-    	$("body").append(twitterScript);
+    	var tweetBtn = $('<a></a>').addClass('twitter-share-button').attr("href","https://twitter.com/share").attr("data-via","gramercytech").attr("data-text","I used Gramercy Tech's Event Name Generator and got '"+eventName+"'!").attr("data-hashtags",eventHashtag).html("Tweet");
+    	$("body").append(tweetBtn);
+    	twttr.widgets.load();
 		},3900);
 	});
 })
