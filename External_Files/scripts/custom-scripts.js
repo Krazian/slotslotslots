@@ -203,7 +203,7 @@ $(document).ready(function(){
     	$(".showwords").val(eventName);
     	$("#randomizeButton").css("animation-name","blink");
     	var tweetBtn = $('<a></a>').addClass('twitter-share-button').attr("href","https://twitter.com/share").attr("data-via","gramercytech").attr("data-text","I used Gramercy Tech's Event Name Generator and got '"+eventName+"'!").attr("data-hashtags",eventHashtag).html("Tweet");
-    	$("body").append(tweetBtn);
+    	$(".social-share .col-xs-12").append(tweetBtn);
     	twttr.widgets.load();
 		},3900);
 	});
