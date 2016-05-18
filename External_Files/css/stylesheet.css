@@ -13,7 +13,7 @@ h1{
 }
 
 .banner{
-  background-color: white;
+  width:70%;
   font-family: 'Open Sans', sans-serif;
   padding: 10px 10px;
   display: inline-block;
@@ -103,7 +103,7 @@ h1{
 }
 
 #copywords{
-  background-color: white;
+  /*background-color: white;*/
   color: black;
   font-size: 30px;
   font-family: 'Monoton', cursive;
@@ -140,6 +140,10 @@ h1{
 }
 
 @media only screen and (min-width: 489px) and (max-width: 767px){
+  .banner{
+    width:100%;
+  }
+
   .house{
     width:100%;
   }
@@ -163,10 +167,15 @@ h1{
 
   #copywords{
     margin:15px 0;
+    width: 75%;
   }
 }
 
 @media only screen and (max-width: 480px){
+  .banner{
+    width:100%;
+  }
+
   .house{
     width:100%;
   }
@@ -190,9 +199,11 @@ h1{
 
   .showwords{
     font-size: 20px !important;
+    margin-bottom: 15px;
   }
 
   #copywords{
     margin:15px 0;
+    width:100%;
   }
 }
