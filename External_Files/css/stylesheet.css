@@ -118,15 +118,15 @@ h1{
   color: black;
 }
 
-#copywords:after{
-/*  content: '';
+/*#copywords:after{
+  content: '';
   position: relative;
   margin-left: 32px;
   margin-top: -19px;
   border-top: 40px solid white;
   border-bottom: 40px solid white;
-  border-right: 37px solid transparent;*/
-}
+  border-right: 37px solid transparent;
+}*/
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
   .slot{
@@ -189,7 +189,7 @@ h1{
   .slot div{
     padding: 5px 0px;
   }
-  
+
   #randomizeButton{
     font-size:25px;
   }

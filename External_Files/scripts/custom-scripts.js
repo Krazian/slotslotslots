@@ -39,6 +39,7 @@ $(document).ready(function(){
 
 	//Start shuffling/spinning on click
 	$("#randomizeButton").click(function(){
+		$("#twitter-script").remove()
 		$(this).css("animation-name","na");
 		machine1.shuffle();
 		machine2.shuffle();
@@ -186,16 +187,24 @@ $(document).ready(function(){
 			var one = $("#machine1").children().children()[machine1.active+1].innerHTML;
      	var two = $("#machine2").children().children()[machine2.active+1].innerHTML;
      	var three = $("#machine3").children().children()[machine3.active+1].innerHTML;
-
+     	var twitterScript = $("<script id='twitter-script'>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>")
+     	var eventName;
      	//If either the first or second word is blank, remove extra whitespace
      	if ((one === "") && (two === "")){
-     		$(".showwords").val(three);
+     		eventName = three;
+     		eventHashtag = three;
      	} else if (two === ""){
-      	$(".showwords").val(one+" "+three);
+      	eventName = one+" "+three;
+      	eventHashtag = one+three;
     	} else {
-    		$(".showwords").val(one+" "+two+" "+three);
+    		eventName = one+" "+two+" "+three;
+    		eventHashtag = one+two+three;
     	};
+    	$(".showwords").val(eventName);
     	$("#randomizeButton").css("animation-name","blink");
+    	$(".twitter-share-button").attr("data-text","I used Gramercy Tech's Event Name Generator and got '"+eventName+"'!")
+    	$(".twitter-share-button").attr("data-hashtags",eventHashtag)
+    	$("body").append(twitterScript);
 		},3900);
 	});
 })
