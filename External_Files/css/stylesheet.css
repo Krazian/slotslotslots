@@ -190,6 +190,10 @@ h1{
     padding: 5px 0px;
   }
   
+  #randomizeButton{
+    font-size:25px;
+  }
+  
   .results p{
     font-size: 14px;
   }
