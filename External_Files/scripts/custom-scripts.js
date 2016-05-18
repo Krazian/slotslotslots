@@ -202,7 +202,7 @@ $(document).ready(function(){
     	};
     	$(".showwords").val(eventName);
     	$("#randomizeButton").css("animation-name","blink");
-    	var tweetBtn = $('<a></a>').addClass('twitter-share-button').attr("href","https://twitter.com/share").attr("data-text","I used the 'Event Name Generator' by @gramercytech and got '"+eventName+"'!").attr("data-hashtags",eventHashtag).html("Tweet");
+    	var tweetBtn = $('<a></a>').addClass('twitter-share-button').attr("href","https://twitter.com/share").attr("url","http://tinyurl.com/ht777r5").attr("data-text","I used the 'Event Name Generator' by @gramercytech and got '"+eventName+"'!").attr("data-hashtags",eventHashtag).html("Tweet");
     	$(".social-share .col-xs-12").append(tweetBtn);
     	twttr.widgets.load();
 		},3900);
