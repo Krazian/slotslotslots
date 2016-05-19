@@ -131,6 +131,10 @@ h1{
   margin-bottom: 10px;
 }
 
+.fb-share-button span{
+ margin-top:-5px;
+}
+
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
   .slot{
     font-size: 40px
