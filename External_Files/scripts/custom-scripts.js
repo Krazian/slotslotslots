@@ -39,6 +39,7 @@ $(document).ready(function(){
 
 	//Start shuffling/spinning on click
 	$("#randomizeButton").click(function(){
+		$(".fb-share-button").hide();
 		$(".twitter-share-button").remove();
 		$(this).css("animation-name","na");
 		machine1.shuffle();
@@ -205,9 +206,9 @@ $(document).ready(function(){
     	var $tweetBtn = $('<a></a>').addClass('twitter-share-button').attr("href","https://twitter.com/share").attr("url","http://tinyurl.com/ht777r5").attr("data-text","I used the 'Event Name Generator' by @gramercytech and got '"+eventName+"'!").attr("data-hashtags",eventHashtag).html("Tweet");
     	$(".social-share .col-xs-12").append($tweetBtn);
     	$tweetBtn.hide();
+    	$(".fb-share-button").show();
     	twttr.widgets.load();
     	$tweetBtn.show();
 		},3900);
-		// $(".fb-share-button span").css("vertical-align","top");
 	});
 })
