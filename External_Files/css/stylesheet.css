@@ -132,7 +132,7 @@ h1{
 }
 
 .fb-share-button span{
- margin-top:-5px;
+  vertical-align: top !important;
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px){
