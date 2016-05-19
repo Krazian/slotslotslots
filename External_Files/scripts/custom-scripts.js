@@ -208,5 +208,6 @@ $(document).ready(function(){
     	twttr.widgets.load();
     	$tweetBtn.show();
 		},3900);
+		// $(".fb-share-button span").css("vertical-align","top");
 	});
 })
